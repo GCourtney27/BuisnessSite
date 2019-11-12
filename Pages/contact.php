@@ -7,17 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-<?php include "../PHP_Includes/menu.php"; ?>
-    <h1>Contact</h1>
+<div class="mainContent">
+        <h1><?php include "../PHP_Includes/header.php"?></h1>
+        <?php include "../PHP_Includes/menu.php"?>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Vestibulum sed sapien purus. 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-Praesent gravida lorem quam, eu posuere ipsum feugiat et. 
-Aenean vitae felis et dolor feugiat bibendum vel vel dolor. 
-Suspendisse cursus odio at dui posuere, at fermentum urna sodales. 
-Nulla facilisi. Nunc vel pulvinar nisi. Nulla eu ultrices purus. 
-Vivamus pulvinar eros quam, eget maximus velit tempor a. Nullam lacinia egestas nisl id vehicula. 
-Morbi at laoreet nibh, id tincidunt lorem. Mauris viverra vulputate enim eu consequat.</p>
+        <?php include "../PHP_Includes/footer.php"?>
+        </div>
 </body>
 </html>

@@ -15,6 +15,17 @@ class Page{
         // TODO: implement database parsing
     }
 
+    public function DEBUG_WriteFile(){
+        $myFile = fopen("../PageOutput/".$this->title.".txt", "w") or die("Unable to write to file");
+
+        $txt = $this->title;
+        $txt .= $this->header;
+        $txt .= $this->mainContent;
+
+        fwrite($myFile, $txt);
+    
+        fclose($myFile);
+    }
 }
     
 ?>

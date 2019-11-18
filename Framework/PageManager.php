@@ -1,9 +1,17 @@
 <?php
-    include "../Objects/Page.php";
+    include "CreatePage.php";
+    
+    // echo "Redirected via PageManager.php";
 
-    echo "In Page Manager";
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-    // $test = new Page("Page Title!", "Page Header!", "Page Content!");
-    // $test->DEBUG_WriteFile();
+        if(isset($_POST['CreatePage_Btn'])){
+            // Redirection
+            header("Location: CreatePage.php");
+        }
+
+    }
+    
+    
 
 ?>

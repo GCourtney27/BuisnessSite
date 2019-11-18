@@ -5,6 +5,7 @@
 // ============================
 $menuArr = [
     // Menu item name => link to another file
+  
     "Home | " => "../Pages/index.php",
     "About | " => "../Pages/about.php",
     "Contact | " => "../Pages/contact.php",

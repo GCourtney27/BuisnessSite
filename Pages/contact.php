@@ -16,8 +16,8 @@
 
        <?php 
        $menuArr = [
-        "Locations | " => "",
-        "Emails " => "../Pages/contact.php"
+        "Locations | " => "../Pages/contact_locations.php",
+        "Emails " => "../Pages/contact_email.php"
         ];
 
         foreach($menuArr as $key => $value){

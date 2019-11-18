@@ -6,26 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <?php $pageName = "About"?>
-    <title><?php echo $pageName?></title>
+    <title><?php echo $pageName ?></title>
 </head>
 <body>
 
 <div class="mainContent">
     <h1><?php include "../PHP_Includes/header.php"?></h1>
     <?php include "../PHP_Includes/menu.php"?>
+    <h1>History</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus. Purus non enim praesent elementum facilisis leo vel fringilla est. Phasellus vestibulum lorem sed risus ultricies. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.<p>
 
-<?php 
-       $menuArr = [
-        "Mission | " => "../Pages/about_mission.php",
-        "History " => "../Pages/about_history.php"
-        ];
-
-        foreach($menuArr as $key => $value){
-            echo " <a lass='button' href=$value> $key </a>";
-        }
-?>
-
+<a lass='button' href="../Pages/about_mission.php"> Mission</a>
     <?php include "../PHP_Includes/footer.php"?>
 </div>
 

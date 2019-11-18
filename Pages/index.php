@@ -13,7 +13,7 @@
     <div class="mainContent">
         <h1><?php include "../PHP_Includes/header.php"?></h1>
         <?php include "../PHP_Includes/menu.php"?>
-
+        <p>Welcome to the website</p>
         <?php include "../PHP_Includes/footer.php"?>
     <div>
 </body>

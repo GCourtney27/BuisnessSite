@@ -1,8 +1,8 @@
 <?php
-$WebsiteName = "Website Name!";
+$websiteName = "Website Name!";
 
 echo "<div class='header'>";
-echo "$WebsiteName - $PageName";
+echo "$websiteName - $pageName";
 echo "</div>"
 
 ?>

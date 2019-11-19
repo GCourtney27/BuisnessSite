@@ -7,16 +7,26 @@
     <link href="../Styles/styleOne.css" rel="stylesheet" />
     <!-- Run website with: http://localhost/<YourfolderName>/Pages/index.php -->
     
-    <?php $pageName = "Home"?>
+    <?php $pageName = "Admin Page"?>
     <title><?php echo $pageName?></title>
 </head>
 <body>
     <div class="mainContent">
         <h1><?php include "../PHP_Includes/header.php"?></h1>
         <?php include "../PHP_Includes/menu.php"?>
-        <p>Welcome to the website</p>
-        <p>Quam quisque id diam vel quam elementum pulvinar. Vel quam elementum pulvinar etiam. Platea dictumst vestibulum rhoncus est pellentesque. Mauris sit amet massa vitae. Nisl pretium fusce id velit ut. Euismod lacinia at quis risus sed vulputate odio. Bibendum arcu vitae elementum curabitur.</p>
+
+        <form name="CreatePage_Btn" action="../Framework/PageManager.php" method="post">
+            <input type="submit" value="Create Page" />
+        </form>
+
+        <!-- For each page have a delete button -->
+        <!-- <form action="../Framework/PageManager/PageFactory.php">
+            <input type="submit" value="Delete Page" />
+        </form> -->
+
+
         <?php include "../PHP_Includes/footer.php"?>
     <div>
+
 </body>
 </html>

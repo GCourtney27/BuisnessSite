@@ -43,9 +43,9 @@ form {
     padding: 15px;
 }
 
-input[type=text] {
+input[type=text],[type=password] {
     width: 75%;
-    height: 50%;
+    height: auto;
     padding: 12px 20px;
     margin: 5px 0;
     box-sizing: border-box;
@@ -56,11 +56,27 @@ input[type=text] {
 
 input[type=submit] {
     font-size: 15px;
-    width: 60%;
+    width: auto;
     padding: 6px 10px;
     margin: 10px auto;
     box-sizing: border-box;
     border-radius: 15px;
+}
+
+table{    
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 50px;
+    align-content: center;
+    text-align: center;
+    background: #666;
+    text-align: center;
+    height: auto;
+    width: 1200px;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    text-shadow: 3px 2px black;
 }
 
 .footer {

@@ -2,7 +2,7 @@
 
     $host = "localhost"; // Wamp host name
     $username = "root"; // username for phpMyAdmin
-    $password = "MyNewPass"; // password for phpMyAdmin
+    $password = ""; // password for phpMyAdmin
     $db_name = "buisnesssite"; // database name you are trying to access
 
     $sql_inst = new mysqli($host, $username, $password, $db_name);

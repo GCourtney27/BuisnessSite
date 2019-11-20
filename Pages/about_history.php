@@ -9,16 +9,15 @@
     <title><?php echo $pageName ?></title>
 </head>
 <body>
-
-<div class="mainContent">
-    <h1><?php include "../PHP_Includes/header.php"?></h1>
-    <?php include "../PHP_Includes/menu.php"?>
-    <h1>History</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus. Purus non enim praesent elementum facilisis leo vel fringilla est. Phasellus vestibulum lorem sed risus ultricies. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.<p>
-
-<a lass='button' href="../Pages/about_mission.php"> Mission</a>
+<h1>History</h1>
+<p>The year was 1982. Jim Disbrow and Scott Lowery had recently moved to Ohio from Buffalo, New York. <br>All was fine until one day when the two were craving wings. Not just ordinary wings, but authentic Buffalo, New York-style chicken wings. With none to be found nearby, Jim and Scott had two choices: road trip to New York, or open a wing joint close to home. Lucky for us, they chose the latter. Hence, the beginning of Buffalo Wild Wings & Weck, now Buffalo Wild Wings®, the welcoming neighborhood atmosphere with a front-row seat for every sports fan that offers 21 mouth-watering signature sauces and seasonings.</p>
+<p>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/BuisnessSite/PHP_Includes/image_up.php'; ?>
+    </p>
+	
+	<a lass='button' href="../Pages/about_mission.php"> Mission</a>
     <?php include "../PHP_Includes/footer.php"?>
 </div>
-
 </body>
+
 </html>

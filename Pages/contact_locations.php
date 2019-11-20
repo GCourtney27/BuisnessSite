@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../Styles/styleOne.css" rel="stylesheet" />
     <?php $pageName = "Contact"?>
-    <title><?php echo $pageName ?></title>
-</head>
+    <title><?php echo $pageName?></title>
 <body>
 
 <div class="mainContent">
@@ -16,7 +8,7 @@
     <h1>Locations</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus. Purus non enim praesent elementum facilisis leo vel fringilla est. Phasellus vestibulum lorem sed risus ultricies. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.<p>
 
-<a lass='button' href="../Pages/contact_email.php"> Email</a>
+<a class='button' href="../Pages/contact_email.php"> Email</a>
     <?php include "../PHP_Includes/footer.php"?>
 </div>
 

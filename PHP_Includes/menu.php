@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // ============================
 // Serves as the menu bar system for all pages.
 // To add a new page type in page title and link to pave in the key => value box
@@ -8,8 +10,18 @@ $menuArr = [
   
     "Home" => "../Pages/index.php",
     "About" => "../Pages/about.php",
-    "Contact" => "../Pages/contact.php"
+    "Contact" => "../Pages/contact.php",
+    
 ];
+
+$newArray = array();
+if(isset($_SESSION['login_user'])){
+    $newArray = array("Settings" => "../Pages/admin.php", "Logout" => "../Framework/logout.php");
+}else{
+    $newArray = array("Login" => "../Pages/adminLogin.php");
+}
+
+$menuArr = array_merge($menuArr, $newArray);
 
 echo "<div class='menu'>";
 foreach($menuArr as $key => $value){

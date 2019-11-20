@@ -1,0 +1,103 @@
+html{
+    text-align: center;
+    background-color: #3E434F;  
+}
+
+body{
+    margin: 0px;
+}
+
+ h1{
+    color: white;
+    text-shadow: 3px 2px black;
+ }
+
+h3{
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+    color: white;
+    width: 650px;
+    margin-left: 28%;
+    height: auto;
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+form {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.formStyle {
+    background: #666;
+    margin-top: 20px;
+    text-align: center;
+    height: auto;
+    width: 350px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+input[type=text] {
+    width: 75%;
+    height: 50%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input[type=submit] {
+    font-size: 15px;
+    width: 60%;
+    padding: 6px 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.footer {
+    font-size: 10px;
+    margin-top: 200px;
+}
+
+.menu{
+    border: .5px solid black;
+    background-color: #3F475C;
+    width: auto;
+}
+
+
+a {
+    width: auto;
+    font-size: 32px;
+    display: inline-block;
+    text-decoration: none;
+    align-content: center;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+    a:link {
+        color: #AEC0CF;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #B5DDE6;
+    }
+
+    a:hover {
+        color: #9EB3E6;
+    }
+
+    a:active {
+        color: #AEC0CF;
+    }

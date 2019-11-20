@@ -10,8 +10,5 @@
             header("Location: CreatePage.php");
         }
 
-    }
-    
-    
-
+    }  
 ?>

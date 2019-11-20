@@ -1,6 +1,5 @@
 <?php
     include "../Objects/Page.php";
-    include "../Database/DatabaseManager.php";
 
     //https://www.w3schools.com/php/php_file_create.asp
     echo "In PageFactory";
@@ -9,9 +8,8 @@
     $header = $_POST["PageHeader_txtIn"];
     $mainContent = $_POST["PageContent_txtIn"];
 
-    
-
-    // $page->ParseToDatabase();
+    $page = new Page($title, $header, $mainContent);
+    $page->ParseToDatabase();
 
     // DEBUG
     //$page = new Page($title, $header, $mainContent);
@@ -19,6 +17,6 @@
     // end DEBUG
 
     // Redirect to admin page
-    //header("Location: ../Pages/admin.php");
+    header("Location: ../Pages/admin.php");
 
 ?>

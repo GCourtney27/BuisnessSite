@@ -14,10 +14,7 @@
     <div class="mainContent">
         <h1><?php include "../PHP_Includes/header.php"?></h1>
         
-        <!--// KNOWN MENU ISSUE: The menu bar is relative to the file you are in at the time you click it!
-            //              This causes undesired page navigation behavior-->
         <?php include "../PHP_Includes/menu.php"?>
-        
         
         
         <!-- https://stackoverflow.com/questions/24453038/pass-parameter-to-form-action-in-html -->

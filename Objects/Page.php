@@ -8,11 +8,22 @@ class Page{
         $this->title = $_title;
         $this->header = $_header;
         $this->mainContent = $_mainContent;
-        $this->ParseToDatabase();
+        // $this->ParseToDatabase();
     }
     
     public function ParseToDatabase(){
-        // TODO: implement database parsing
+        include "../Database/DatabaseManager.php";
+        
+        $query = "select * from pages";
+        $result = $sql_inst->query ( $query );
+        $num_db_rows = $result->num_rows;
+        $insert_index = ($num_db_rows + 1);
+        echo  $insert_index;
+
+        $objParse = "INSERT INTO pages (page_index, page_title, page_header, page_content) 
+                    VALUES (".$insert_index.",'".$this->title."','".$this->header."','".$this->mainContent
+                    ."')";
+        $sql_inst->query ( $objParse );
     }
 
     public function DEBUG_WriteFile(){

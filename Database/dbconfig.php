@@ -1,17 +1,15 @@
 <?php
 
-    $host = "localhost";
-    $username = "root";
-    $password = "MyNewPass";
-    $db_name = "buisnesssite";
+    $host = "localhost"; // Wamp host name
+    $username = "root"; // username for phpMyAdmin
+    $password = "MyNewPass"; // password for phpMyAdmin
+    $db_name = "buisnesssite"; // database name you are trying to access
 
     $sql_inst = new mysqli($host, $username, $password, $db_name);
 
     if(mysqli_connect_errno()){
-        echo "Failed to connect to SQL database";
+        echo "Fatal error: Could not connect to sql database.";
         exit;
-    }else{
-        echo "Database connect successful";
     }
 
 ?>

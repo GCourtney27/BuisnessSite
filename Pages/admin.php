@@ -15,15 +15,41 @@
         <h1><?php include "../PHP_Includes/header.php"?></h1>
         <?php include "../PHP_Includes/menu.php"?>
 
-        <form name="CreatePage_Btn" action="../Framework/PageManager.php" method="post">
+        <form name="CreatePage_Btn" action="../Framework/CreatePage.php" method="post">
             <input type="submit" value="Create Page" />
         </form>
 
         <!-- For each page have a delete button -->
-        <!-- <form action="../Framework/PageManager/PageFactory.php">
-            <input type="submit" value="Delete Page" />
-        </form> -->
 
+        <table>
+            <tr>
+                <th>Page Id</th>
+                <th>Page Title</th>
+            </tr>
+
+        <?php
+        
+            include "../Database/DatabaseManager.php";
+            $query = "select * from pages";
+            $result = $sql_inst->query ( $query );
+            $num_db_rows = $result->num_rows;
+            
+            if($num_db_rows >= 1){
+
+                while($row = $result->fetch_assoc()){
+                    extract($row);
+
+                    echo "<tr>";
+                        echo "<td>{$page_index}</td>";
+                        echo "<td>{$page_title}</td>";
+                        echo "<td> <a href='../Framework/DeletePage.php?page_index={$page_index}'>Delete Page</a> </td>";
+                    echo "</tr>";
+                }
+
+            }
+
+        ?>
+        </table>
 
         <?php include "../PHP_Includes/footer.php"?>
     <div>

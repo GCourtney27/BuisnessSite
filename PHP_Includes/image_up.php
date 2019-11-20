@@ -23,7 +23,7 @@
 </form>
 
 <?php else: ?>
-
+<div id= imgDiv>
 <img src="<?php echo "..\\Images\\".$page_image?>" />
-<?php echo dirname(getcwd(),1)."\\Images\\".$page_image?>
+</div>
 <?php endif; ?> 

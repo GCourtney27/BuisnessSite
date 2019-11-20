@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../Styles/styleOne.css" rel="stylesheet" />
-    <?php $pageName = "About"?>
+    <?php 
+    $pageName = "About";
+    $page_image = null;
+    ?>
     <title><?php echo $pageName ?></title>
 </head>
 <body>
@@ -20,5 +23,6 @@
     <?php include "../PHP_Includes/footer.php"?>
 </div>
 
+<div><?php include "../PHP_Includes/image_up.php" ?></div>
 </body>
 </html>

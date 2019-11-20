@@ -8,9 +8,14 @@ class Page{
         $this->title = $_title;
         $this->header = $_header;
         $this->mainContent = $_mainContent;
-        // $this->ParseToDatabase();
     }
     
+    public function EditPage($newTitle, $newHeader, $newContent){
+        $this->title = $newTitle;
+        $this->header = $newHeader;
+        $this->mainContent = $newContent;
+    }
+
     public function ParseToDatabase(){
         include "../Database/DatabaseManager.php";
         

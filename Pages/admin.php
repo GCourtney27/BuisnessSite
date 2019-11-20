@@ -43,6 +43,8 @@
                         echo "<td>{$page_index}</td>";
                         echo "<td>{$page_title}</td>";
                         echo "<td> <a href='../Framework/DeletePage.php?page_index={$page_index}'>Delete Page</a> </td>";
+                        echo "<td> <a href='../Pages/DefaultPage.php?pageTitle={$page_title}&pageHeader={$page_header}&pageContent={$page_content}'>View Page</a> </td>";
+                        echo "<td> <a href='../Pages/Edit.php?pageIndex={$page_index}&pageTitle={$page_title}&pageHeader={$page_header}&pageContent={$page_content}'>Edit Page</a> </td>";
                     echo "</tr>";
                 }
 
